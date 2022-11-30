@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  background-color: rgb(215, 245, 255);
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#nav-tablet {
+  display: flex;
+}
+
+#nav-mobile {
+  display: none;
+}
+
+nav {
+  background-color: white;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: end;
+  box-shadow: 1px 3px 5px 0px rgba(87, 87, 87, 0.75);
+  -webkit-box-shadow: 1px 3px 5px 0px rgba(87, 87, 87, 0.75);
+  -moz-box-shadow: 1px 3px 5px 0px rgba(87, 87, 87, 0.75);
+  position: sticky;
+  top: 0;
+  /* width: 100%; */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  /* max-width: 80%; */
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+
+.content {
+  padding: 50px;
+}
+
+/* section profile */
+.profile {
+  background-color: white;
+  display: flex;
+  /* flex-direction: row; */
+  padding: 40px;
+  align-items: center;
+  justify-content:left ;
+  margin-top: 50px;
+  box-shadow: 1px 1px 5px 3px rgba(87, 87, 87, 0.68);
+  -webkit-box-shadow: 1px 1px 5px 3px rgba(87, 87, 87, 0.68);
+  -moz-box-shadow: 1px 1px 5px 3px rgba(87, 87, 87, 0.68);
+}
+
+.left {
+  margin-right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 16px;
+  width: 60vw;
+}
+
+.left img {
+  margin-left: 0px;
+  width: 130px;
+  height: 130px;
+}
+
+.left .name-group {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.left .name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.left .work {
+  font-size: 12px;
+  margin-top: -10px;
+  margin-left: 15px;
+}
+
+.btn-container {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.right {
+  display: flex;
+  font-size: 12px;
+  height: 150px;
+  
+}
+
+.right-title {
+  margin-right: 30px;
+
+}
+
+.right-title p {
+  font-weight: bold;
+  margin-left: 0px;
+  
+}
+
+form {
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+form div input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 100%;
+  background-color: green;
+}
+
+@media only screen and (max-width: 701px) {
+  #nav-tablet {
+    display: none;
+  }
+
+  #nav-mobile {
+    display: block;
+  }
+
+  nav {
+    background-color: red;
+  }
+
+  .content {
+    padding: 0;
+    width: 100vw;
+  }
+
+  .profile {
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .left .name-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    margin-top: 20px;
+    /* margin: 0 auto; */
+  }
+}
+
